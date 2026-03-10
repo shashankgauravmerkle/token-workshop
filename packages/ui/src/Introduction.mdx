@@ -1,0 +1,106 @@
+import { Meta } from '@storybook/blocks'
+
+<Meta title="Design System / Introduction" />
+
+# Dodie Thayer for Tory Burch — Design System
+
+A component library built with **Atomic Design methodology**, capturing the editorial luxury aesthetic of the Tory Burch × Dodie Thayer collaboration.
+
+---
+
+## 🎨 Design Principles
+
+1. **Editorial Luxury** — Every component communicates refinement through restrained typography and generous whitespace
+2. **Botanical Warmth** — The palette draws from Dodie Thayer's hand-painted botanical work: cream, sage, terracotta, blush, gold
+3. **Craft & Precision** — Interaction states (hover, focus, active) are deliberate and smooth, never jarring
+4. **Accessibility First** — All components meet WCAG 2.1 AA standards
+
+---
+
+## 🏗 Architecture
+
+This design system is structured following **Atomic Design** (Brad Frost):
+
+```
+packages/
+├── tokens/          Design tokens — colours, typography, spacing, shadows
+└── ui/
+    └── src/
+        ├── atoms/         Irreducible building blocks
+        │   ├── Button     Primary CTA element
+        │   ├── Text       Polymorphic typographic atom
+        │   ├── Badge      Product status labels
+        │   ├── Tag        Filter/category chips
+        │   ├── Link       Animated anchor variants
+        │   ├── Icon       SVG icon set
+        │   └── Divider    Section separators
+        │
+        ├── molecules/     Purposeful groups of atoms
+        │   ├── ProductCard      Shoppable product unit
+        │   ├── NavigationItem   Nav link + mega-menu
+        │   ├── SearchBar        Search input
+        │   └── MediaCaption     Editorial text block
+        │
+        └── organisms/     Complex UI sections
+            ├── Header           Site navigation
+            ├── HeroBanner       Campaign hero section
+            ├── ProductGrid      Browsable product listing
+            ├── EditorialBlock   Split-screen storytelling
+            ├── CollectionCarousel  Scrollable product row
+            └── Footer           Site footer
+```
+
+---
+
+## 🎨 Colour Palette
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `cream-200`       | `#F5F0E8` | Primary page background |
+| `sage-400`        | `#8B9E7E` | Botanical accent |
+| `sage-600`        | `#4A6741` | Deep forest accent |
+| `terracotta-400`  | `#C4714A` | Warm accent, sale badges |
+| `blush-300`       | `#E8C4B8` | Secondary backgrounds |
+| `gold-500`        | `#B8965A` | Premium accent, hover states |
+| `brand-black`     | `#1A1A1A` | Primary text |
+| `brand-white`     | `#FAFAF7` | Ivory white |
+
+---
+
+## ✍️ Typography
+
+| Role | Font | Style |
+|------|------|-------|
+| Editorial headlines | Playfair Display | Light / Regular, tracked tight |
+| All-caps labels | Inter | Medium, `tracking-luxury` (0.25em) |
+| Body copy | Inter | Regular, relaxed line-height |
+| Price | Inter | Medium |
+
+---
+
+## 📐 Spacing
+
+Built on an **8px base grid**. Semantic tokens:
+
+- `componentMd` = 16px (standard padding)
+- `gutterDesk`  = 32px (column gap)
+- `sectionDesk` = 96px (section vertical rhythm)
+- `maxContent`  = 1440px (max-width constraint)
+
+---
+
+## 🚀 Getting Started
+
+```tsx
+import { Button, Text, ProductCard } from '@token-workshop/ui'
+import type { ButtonProps } from '@token-workshop/ui'
+
+export function MyComponent() {
+  return (
+    <div>
+      <Text variant="displayMedium">Dodie Thayer for Tory Burch</Text>
+      <Button variant="primary" size="lg">Shop the Collection</Button>
+    </div>
+  )
+}
+```
