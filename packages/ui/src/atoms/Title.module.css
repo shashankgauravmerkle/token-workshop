@@ -1,0 +1,10 @@
+.title {
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-weight: var(--font-weight-sb);
+  color: var(--color-neural);
+  margin: 0;
+  line-height: 1.4;
+}
+.sm { font-size: 0.875rem; }
+.md { font-size: var(--font-size-16); }
+.lg { font-size: var(--font-size-20); }

@@ -1,0 +1,13 @@
+.value {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.25s ease;
+}
+.expanded { max-height: 600px; }
+.inner {
+  padding: var(--space-16) 0;
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-size: 0.9375rem;
+  color: var(--color-neural);
+  line-height: 1.7;
+}

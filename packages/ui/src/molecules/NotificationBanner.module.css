@@ -1,0 +1,31 @@
+.banner {
+  background: var(--color-neural);
+  color: var(--color-white);
+  padding: 10px var(--font-size-16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-12);
+  min-height: 44px;
+}
+.content { flex: 1; text-align: center; }
+.message,
+.link {
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-white);
+}
+.link { text-decoration: underline; }
+.link:hover { opacity: 0.8; }
+.dismiss {
+  background: none;
+  border: none;
+  color: var(--color-grey);
+  cursor: pointer;
+  padding: var(--space-4);
+  display: flex;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+.dismiss svg { width: var(--font-size-16); height: var(--font-size-16); }
+.dismiss:hover { color: var(--color-white); }

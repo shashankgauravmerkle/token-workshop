@@ -1,0 +1,11 @@
+.link {
+  color: #0070f3;
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  font-size: inherit;
+  transition: color 0.15s;
+}
+.link:hover {
+  color: #0051cc;
+  text-decoration: underline;
+}

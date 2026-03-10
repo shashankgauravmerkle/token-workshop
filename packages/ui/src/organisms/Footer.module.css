@@ -1,0 +1,26 @@
+.footer {
+  background: var(--color-neural);
+  padding: var(--space-48) var(--space-24) var(--space-24);
+}
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-48);
+  padding-bottom: var(--space-40);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.about { flex: 1; min-width: 240px; }
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-40);
+  flex: 2;
+}
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--font-size-16);
+  padding-top: var(--space-24);
+}

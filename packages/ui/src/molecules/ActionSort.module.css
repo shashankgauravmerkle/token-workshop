@@ -1,0 +1,19 @@
+.container { display: flex; align-items: center; gap: var(--space-8); }
+.label {
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-grey);
+  white-space: nowrap;
+}
+.select {
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 7px var(--space-12);
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-neural);
+  background: var(--color-white);
+  cursor: pointer;
+  outline: none;
+}
+.select:focus { border-color: #0070f3; }

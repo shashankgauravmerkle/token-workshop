@@ -1,0 +1,12 @@
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+}
+.link { color: #0070f3; text-decoration: none; }
+.link:hover { text-decoration: underline; }
+.current { color: var(--color-grey); }
+.last { color: var(--color-neural); font-weight: 500; }
+.separator { color: var(--color-grey); }

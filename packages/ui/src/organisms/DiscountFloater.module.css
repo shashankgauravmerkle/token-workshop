@@ -1,0 +1,8 @@
+.floater {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.top { top: 0; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); }
+.bottom { bottom: 0; box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.12); }

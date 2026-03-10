@@ -1,0 +1,5 @@
+.notice {
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-grey);
+}

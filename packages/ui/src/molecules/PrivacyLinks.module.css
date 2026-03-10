@@ -1,0 +1,11 @@
+.nav { display: flex; flex-wrap: wrap; gap: var(--space-8); align-items: center; }
+.item { display: inline-flex; align-items: center; gap: var(--space-8); }
+.link {
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-grey);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.link:hover { color: var(--color-white); }
+.divider { color: #4b5563; }

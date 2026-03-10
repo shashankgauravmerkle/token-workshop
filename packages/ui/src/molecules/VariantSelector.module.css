@@ -1,0 +1,21 @@
+.container { display: flex; flex-direction: column; gap: var(--space-8); }
+.label {
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-neural);
+}
+.options { display: flex; flex-wrap: wrap; gap: var(--space-8); }
+.option {
+  padding: 6px 14px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 6px;
+  background: none;
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-neural);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+.option:hover { border-color: var(--color-neural); }
+.selected { border-color: var(--color-neural); background: var(--color-neural); color: var(--color-white); }

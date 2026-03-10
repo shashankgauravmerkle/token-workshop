@@ -1,0 +1,13 @@
+.heading {
+  font-family: var(--font-family-inter), system-ui, sans-serif;
+  font-weight: var(--font-weight-b);
+  line-height: 1.2;
+  color: var(--color-neural);
+  margin: 0;
+}
+.h1 { font-size: 3rem; }
+.h2 { font-size: var(--font-size-36); }
+.h3 { font-size: 1.875rem; }
+.h4 { font-size: var(--font-size-24); }
+.h5 { font-size: var(--font-size-20); }
+.h6 { font-size: var(--font-size-16); }
